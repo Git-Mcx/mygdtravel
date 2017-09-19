@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix {
+  zoom: 1;
+  /*height:1%;*/
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.outer .header {
+  width: 1067px;
+  margin: 0 auto;
+  padding-top: 127px;
+  padding-bottom: 16px;
+}
+.outer .content {
+  width: 876px;
+  margin: 0 auto;
+}
+.outer .content .content_left {
+  float: left;
+  width: 457px;
+}
+.outer .content .content_left ul li {
+  width: 280px;
+  height: 140px;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.outer .content .content_left ul li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.outer .content .content_left ul .odd {
+  width: 165px;
+  margin-left: 12px;
+}
+.outer .content .content_right {
+  float: left;
+  width: 417px;
+  margin-left: 2px;
+}
+.outer .content .content_right ul li {
+  width: 165px;
+  height: 140px;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.outer .content .content_right ul li a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.outer .content .content_right ul .odd {
+  width: 240px;
+  margin-left: 12px;
+}
+.outer .footer {
+  width: 464px;
+  padding-top: 115px;
+  padding-bottom: 19px;
+  margin: 0 auto;
+}
+/*.outer .footer img {
+  width: 464px;
+}*/
+@media screen and (max-width: 640px) {
+  .outer {
+    width: 100%;
+    height: 100%;
+  }
+  .outer .header {
+    width: 100%;
+    height: 17.97%;/*（230/1280）*/
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .outer .header .logo {
+    position: absolute;
+    width: 17.79%;/*（110/640=0.1719）*/
+    height: 27.27%;/*（60/233=0.2575）*/
+    left: 14.06%;/*（94/640=0.1469）*/
+    top: 39.55%;/*（90/233=0.3863）*/
+  }
+  .outer .header .welcome {
+    position: absolute;
+    width: 34.38%;/*(220/640=0.3438)*/
+    height: 15%;/*（30/200=0.15）*/
+    left: 14.06%;/*（94/640=0.1469）*/
+    bottom: 17.27%;/*(37/233=0.1588)*/
+  }
+  .outer .content {
+    width: 70%;/*(448/640=0.70)*/
+    height: 70%;/*(897/1280=0.70)*/
+    margin: 0 auto;
+  }
+  .outer .content .content_left {
+    float: left;
+    width: 100%;/*(450/450=1)*/
+    height: 50%;/*(426/897=0.4749)*/
+  }
+  .outer .content .content_left ul {
+    width: 100%;/*(450/450=1)*/
+    height: 100%;/*(426/897=0.4749)*/
+  }
+  .outer .content .content_left ul li {
+    width: 62.5%;/*(280/457=0.6127)*/
+    height: 31.25%;/*(140/426=0.3286)*/
+    float: left;
+    overflow: hidden;
+    margin-bottom: 1%;/*(4/426=0.009)*/
+  }
+  .outer .content .content_left ul li a {
+    display: block;
+    width: 100%;/*(280/280=1)*/
+    height: 100%;/*(140/140=1)*/
+  }
+  .outer .content .content_left ul li a img {
+    display: block;
+    width: 100%;/*(280/280=1)*/
+    height: 100%;/*(140/140=1)*/
+  }
+  .outer .content .content_left ul .odd {
+    width: 34.83%;/*(162/450=0.36)*/
+    margin-left: 2.67%;/*(12/450=0.0267)*/
+  }
+  .outer .content .content_right {
+    float: left;
+    width: 100%;/*(450/450=1)*/
+    height: 50%;/*(426/897=0.4749)*/
+    margin-left: 0;
+  }
+  .outer .content .content_right ul {
+    width: 100%;/*(450/450=1)*/
+    height: 100%;/*(426/897=0.4749)*/
+  }
+  .outer .content .content_right ul li {
+    width: 34.83%;/*(165/417=0.3957)*/
+    height: 31.25%;/*(140/465=0.3011)*/
+    float: left;
+    overflow: hidden;
+    margin-bottom: 1%;/*(4/465=0.0086)*/
+  }
+  .outer .content .content_right ul li a {
+    display: block;
+    width: 100%;/*(165/165=1)*/
+    height: 100%;/*(140/140=1)*/
+  }
+  .outer .content .content_right ul li a img {
+    display: block;
+    width: 100%;/*(165/165=1)*/
+    height: 100%;/*(140/140=1)*/
+  }
+  .outer .content .content_right ul .odd {
+    width: 62.5%;/*(240/450=0.5357)*/
+    margin-left: 2.67%;/*(12/450=0.0267)*/
+  }
+  .outer .footer {
+    width: 100%;/*(640/640=1)*/
+    height: 11.41%;/*(155/1283=0.1208)*/
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    position: relative;
+  }
+  .outer .footer img {
+    position: absolute;
+    width: 70%;/*(464/640=0.725)*/
+    height: 9.59%;/*(17/1283=0.0133)*/
+    left: 15%;/*(93/640=0.1453)*/
+    bottom: 25.5%;/*(28/1283=0.02182)*/
+  }
+}
+/*# sourceMappingURL=style.css.map */
